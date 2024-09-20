@@ -1,12 +1,26 @@
 body {
   margin: 0;
-  background: linear-gradient(to left bottom, rgb(238, 232, 144), rgb(153, 206, 224));
+  background: linear-gradient(to left bottom, rgb(94, 102, 154), rgb(153, 206, 224));
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: monospace;
-  color: darkcyan;
+  color: rgb(28, 139, 0);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -45,7 +59,6 @@ body {
   font-size: 18px;
 }
 
-
-.input::placeholder{
-    color: darkgray;
+.input::placeholder {
+  color: darkgray;
 }
